@@ -1,0 +1,2 @@
+2020-09-19 10:51:04.4031|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/login|action: Login
+2020-09-19 10:51:04.4943|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/login|action: Login

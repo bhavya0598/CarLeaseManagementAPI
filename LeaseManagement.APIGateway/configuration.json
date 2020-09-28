@@ -1,0 +1,221 @@
+{
+  "ReRoutes": [
+    // ALL CAR API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/cars/getAllCars",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51914
+        }
+      ],
+      "UpstreamPathTemplate": "/cars/getAllCars",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JWTAuth",
+        "AllowedScopes": []
+      }
+    },
+
+    // GET VAR BY ID
+
+    {
+      "DownstreamPathTemplate": "/api/cars/getCarById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51914
+        }
+      ],
+      "UpstreamPathTemplate": "/cars/getCarById/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JWTAuth",
+        "AllowedScopes": []
+      }
+    },
+
+    // LOGIN API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/auth/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62228
+        }
+      ],
+      "UpstreamPathTemplate": "/login",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    // REGISTER API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/auth/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62228
+        }
+      ],
+      "UpstreamPathTemplate": "/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    // VERIFICATION API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/auth/verification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62228
+        }
+      ],
+      "UpstreamPathTemplate": "/verification",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    // GET PAYBACK TIME API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/quote/getpaybacktime",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51356
+        }
+      ],
+      "UpstreamPathTemplate": "/quote/getpaybacktime",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // GET MILEAGE LIMITS API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/quote/getmileagelimit",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51356
+        }
+      ],
+      "UpstreamPathTemplate": "/quote/getmileagelimit",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // USER PERSONAL DATA API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/personal",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/personal",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    // GET ACCOUNT TYPES API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/getaccounttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/getaccounttypes",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // USER BANK DATA API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/bank",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/bank",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    // USER EMPLOYMNET DATA API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/employment",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/employment",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    // GET CONTRACTS API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/getcontracts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/getcontracts",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // GET EMPLOYMENT TYPES API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/users/getemploymenttypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58091
+        }
+      ],
+      "UpstreamPathTemplate": "/users/getemploymenttypes",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // GET EMPLOYMENT TYPES API CONFIG
+
+    {
+      "DownstreamPathTemplate": "/api/quote/saveQuote",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51356
+        }
+      ],
+      "UpstreamPathTemplate": "/quote/saveQuote",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ]
+}

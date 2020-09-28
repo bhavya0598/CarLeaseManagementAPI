@@ -1,0 +1,16 @@
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.deps.json
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.BusinessEntities.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.DataEntities.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.Repository.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.Repository.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.BusinessEntities.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\bin\Debug\netcoreapp2.1\LeaseManagement.DataEntities.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.csprojAssemblyReference.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.csproj.CopyComplete
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Infrastructure\obj\Debug\netcoreapp2.1\LeaseManagement.Infrastructure.pdb

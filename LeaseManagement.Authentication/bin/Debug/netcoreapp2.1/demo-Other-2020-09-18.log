@@ -1,0 +1,54 @@
+2020-09-18 13:33:25.5140|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/login|action: Login
+2020-09-18 13:33:25.6038|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/login|action: Login
+2020-09-18 16:31:51.5844|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/login|action: Login
+2020-09-18 16:31:51.6491|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/login|action: Login
+2020-09-18 16:32:45.9217|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/register|action: Register
+2020-09-18 16:32:45.9257|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/register|action: Register
+2020-09-18 16:35:51.4697|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at LeaseManagement.Authentication.AuthenticationManager.GetActivationCode(String email, String password) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 165
+   at LeaseManagement.Authentication.AuthenticationManager.VerificationLink(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 125
+   at LeaseManagement.Authentication.Controllers.AuthController.Verification(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Authentication\Controllers\AuthController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 16:36:28.3653|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at LeaseManagement.Authentication.AuthenticationManager.GetActivationCode(String email, String password) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 165
+   at LeaseManagement.Authentication.AuthenticationManager.VerificationLink(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 125
+   at LeaseManagement.Authentication.Controllers.AuthController.Verification(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Authentication\Controllers\AuthController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 16:38:55.6626|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/register|action: Register
+2020-09-18 16:38:55.6890|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/register|action: Register
+2020-09-18 16:39:08.5434|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 16:39:08.5434|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 16:39:50.8538|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 16:39:50.8757|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/verification|action: Verification
+2020-09-18 18:09:19.1782|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. |url: https://localhost/api/auth/login|action: Login
+2020-09-18 18:09:19.2320|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. |url: https://localhost/api/auth/login|action: Login

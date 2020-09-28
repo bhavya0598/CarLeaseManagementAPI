@@ -1,0 +1,313 @@
+2020-09-18 13:32:09.7990||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-18 13:32:12.0983|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:62228/  0 
+2020-09-18 13:32:12.1834|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.3932ms 200  
+2020-09-18 13:32:13.1543|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/index.html   
+2020-09-18 13:32:14.6635|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1509.1246ms 200 text/html;charset=utf-8 
+2020-09-18 13:32:16.2862|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/swagger/v1/swagger.json   
+2020-09-18 13:32:17.0857|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 799.4954ms 200 application/json;charset=utf-8 
+2020-09-18 13:33:22.5227|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 13:33:22.5826|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.8434ms 307  
+2020-09-18 13:33:22.6195|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RL4J0U3O9", Request id "0HM2RL4J0U3O9:00000001": the application completed without reading the entire request body. 
+2020-09-18 13:33:22.7354|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-18 13:33:22.7354|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 13:33:22.7476|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.157ms 204  
+2020-09-18 13:33:22.7476|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 13:33:22.7476|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 13:33:23.1328|1|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-09-18 13:33:23.2363|7|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|JWTAuth was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'. 
+2020-09-18 13:33:23.3806|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 13:33:24.3378|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 13:33:25.3073|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 13:33:25.5140|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 13:33:25.6038|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 13:33:26.6230|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (214ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 13:33:26.8417|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2498.5149ms. 
+2020-09-18 13:33:26.8698|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-18 13:33:26.9364|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 3550.1192ms 
+2020-09-18 13:33:26.9364|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4192.0718ms 200 application/json; charset=utf-8 
+2020-09-18 16:31:06.8739||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-18 16:31:10.7490|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:62228/  0 
+2020-09-18 16:31:10.7490|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/index.html   
+2020-09-18 16:31:11.1840|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 435.9471ms 200  
+2020-09-18 16:31:12.1262|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1377.7822ms 200 text/html;charset=utf-8 
+2020-09-18 16:31:12.6771|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/swagger/v1/swagger.json   
+2020-09-18 16:31:13.0064|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 329.3274ms 200 application/json;charset=utf-8 
+2020-09-18 16:31:50.2785|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 16:31:50.3062|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.8341ms 307  
+2020-09-18 16:31:50.3310|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLL", Request id "0HM2RO8JBTNLL:00000002": the application completed without reading the entire request body. 
+2020-09-18 16:31:50.4470|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-18 16:31:50.4470|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:31:50.4581|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.1273ms 204  
+2020-09-18 16:31:50.4581|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 16:31:50.4744|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:31:50.5376|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:31:50.7827|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:31:51.4894|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:31:51.5844|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 16:31:51.6491|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 16:31:51.9383|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (67ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 16:31:52.1843|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1396.4723ms. 
+2020-09-18 16:31:52.2072|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-18 16:31:52.2425|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 1699.7308ms 
+2020-09-18 16:31:52.2425|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1781.7307ms 200 application/json; charset=utf-8 
+2020-09-18 16:32:45.6921|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:32:45.6921|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.4606ms 307  
+2020-09-18 16:32:45.7365|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLM", Request id "0HM2RO8JBTNLM:00000004": the application completed without reading the entire request body. 
+2020-09-18 16:32:45.7601|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/register   
+2020-09-18 16:32:45.7601|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:32:45.7697|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.5977ms 204  
+2020-09-18 16:32:45.7697|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:32:45.7866|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:32:45.8066|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:32:45.8143|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:32:45.8143|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:32:45.9016|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+sp_GetAllUsers 
+2020-09-18 16:32:45.9217|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 16:32:45.9257|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 16:32:46.1557|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (201ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44), @username='?' (Size = 7), @activationCode='?' (Size = 36), @isVerified='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+sp_RegisterNewUser @email, @password, @username, @activationCode, @isVerified 
+2020-09-18 16:32:46.1735|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 355.3241ms. 
+2020-09-18 16:32:46.1735|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2020-09-18 16:32:46.1735|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) in 370.2075ms 
+2020-09-18 16:32:46.1735|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 401.1906ms 400 text/plain; charset=utf-8 
+2020-09-18 16:35:50.6267|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:35:50.6399|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.2117ms 307  
+2020-09-18 16:35:50.6399|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLN", Request id "0HM2RO8JBTNLN:00000001": the application completed without reading the entire request body. 
+2020-09-18 16:35:50.6740|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/register   
+2020-09-18 16:35:50.6740|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:35:50.6740|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.7619ms 204  
+2020-09-18 16:35:50.7006|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:35:50.7006|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:35:50.7006|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:35:50.7167|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:35:50.7341|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:35:50.7341|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+sp_GetAllUsers 
+2020-09-18 16:35:50.7508|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkResult in 21.5688ms. 
+2020-09-18 16:35:50.7818|1|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2020-09-18 16:35:50.7818|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) in 71.8856ms 
+2020-09-18 16:35:50.7818|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.563ms 200  
+2020-09-18 16:35:50.8681|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:35:50.8739|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.3555ms 307  
+2020-09-18 16:35:50.8739|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLN", Request id "0HM2RO8JBTNLN:00000004": the application completed without reading the entire request body. 
+2020-09-18 16:35:50.9097|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/verification   
+2020-09-18 16:35:50.9097|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:35:50.9097|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.8275ms 204  
+2020-09-18 16:35:50.9315|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:35:50.9315|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:35:50.9353|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Verification", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Verification(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:35:50.9353|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:35:50.9677|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:35:50.9677|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 16:35:51.4459|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) in 496.3608ms 
+2020-09-18 16:35:51.4697|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at LeaseManagement.Authentication.AuthenticationManager.GetActivationCode(String email, String password) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 165
+   at LeaseManagement.Authentication.AuthenticationManager.VerificationLink(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 125
+   at LeaseManagement.Authentication.Controllers.AuthController.Verification(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Authentication\Controllers\AuthController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-18 16:35:51.8327|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 901.1776ms 500 text/html; charset=utf-8 
+2020-09-18 16:36:27.8533|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:36:27.8631|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.6032ms 307  
+2020-09-18 16:36:27.8786|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLO", Request id "0HM2RO8JBTNLO:00000001": the application completed without reading the entire request body. 
+2020-09-18 16:36:27.9125|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/register   
+2020-09-18 16:36:27.9189|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:27.9189|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.6601ms 204  
+2020-09-18 16:36:27.9189|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:36:27.9351|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:27.9351|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:36:27.9351|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:36:27.9524|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:36:27.9524|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+sp_GetAllUsers 
+2020-09-18 16:36:27.9678|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkResult in 20.2956ms. 
+2020-09-18 16:36:27.9678|1|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2020-09-18 16:36:27.9678|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) in 30.5553ms 
+2020-09-18 16:36:27.9678|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.2895ms 200  
+2020-09-18 16:36:28.0548|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:36:28.0548|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.4696ms 307  
+2020-09-18 16:36:28.0709|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLO", Request id "0HM2RO8JBTNLO:00000004": the application completed without reading the entire request body. 
+2020-09-18 16:36:28.0853|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/verification   
+2020-09-18 16:36:28.0905|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:28.0905|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.7941ms 204  
+2020-09-18 16:36:28.0905|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:36:28.1077|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:28.1077|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Verification", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Verification(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:36:28.1239|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:36:28.1239|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:36:28.1239|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 16:36:28.3653|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) in 246.9125ms 
+2020-09-18 16:36:28.3653|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at LeaseManagement.Authentication.AuthenticationManager.GetActivationCode(String email, String password) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 165
+   at LeaseManagement.Authentication.AuthenticationManager.VerificationLink(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.BL\Authentication\AuthenticationManager.cs:line 125
+   at LeaseManagement.Authentication.Controllers.AuthController.Verification(UserVM newUser) in C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Authentication\Controllers\AuthController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-18 16:36:28.4013|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 298.8475ms 500 text/html; charset=utf-8 
+2020-09-18 16:36:55.7349|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:36:55.7462|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.3628ms 307  
+2020-09-18 16:36:55.7462|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RO8JBTNLP", Request id "0HM2RO8JBTNLP:00000001": the application completed without reading the entire request body. 
+2020-09-18 16:36:55.7933|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/register   
+2020-09-18 16:36:55.7933|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:55.7933|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.7659ms 204  
+2020-09-18 16:36:55.8132|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:36:55.8132|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:36:55.8132|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:36:55.8277|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:37:20.5203|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:37:35.8482|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+sp_GetAllUsers 
+2020-09-18 16:38:37.1425||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-18 16:38:40.9003|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/index.html   
+2020-09-18 16:38:40.9003|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:62228/  0 
+2020-09-18 16:38:41.1675|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.0337ms 200  
+2020-09-18 16:38:42.5396|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1640.7702ms 200 text/html;charset=utf-8 
+2020-09-18 16:38:42.9002|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/swagger/v1/swagger.json   
+2020-09-18 16:38:43.2656|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 365.3475ms 200 application/json;charset=utf-8 
+2020-09-18 16:38:50.0282|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:38:50.0617|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.5923ms 307  
+2020-09-18 16:38:50.0836|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2ROCPEK8AQ", Request id "0HM2ROCPEK8AQ:00000002": the application completed without reading the entire request body. 
+2020-09-18 16:38:50.1627|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/register   
+2020-09-18 16:38:50.1707|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:38:50.1707|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.6221ms 204  
+2020-09-18 16:38:50.1821|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/register application/json; charset=UTF-8 107 
+2020-09-18 16:38:50.1821|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:38:50.2917|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:38:50.6064|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:38:55.0237|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:38:55.5661|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+sp_GetAllUsers 
+2020-09-18 16:38:55.6626|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 16:38:55.6890|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 16:38:55.7291|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44), @username='?' (Size = 7), @activationCode='?' (Size = 36), @isVerified='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+sp_RegisterNewUser @email, @password, @username, @activationCode, @isVerified 
+2020-09-18 16:39:05.5151|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkResult in 14900.9863ms. 
+2020-09-18 16:39:05.5408|1|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2020-09-18 16:39:05.5576|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Register (LeaseManagement.Authentication) in 15260.4546ms 
+2020-09-18 16:39:07.4864|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:39:08.2388|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 752.4603ms 307  
+2020-09-18 16:39:08.2388|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2ROCPEK8AR", Request id "0HM2ROCPEK8AR:00000004": the application completed without reading the entire request body. 
+2020-09-18 16:39:08.2863|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18104.5284ms 200  
+2020-09-18 16:39:08.3440|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/verification   
+2020-09-18 16:39:08.3530|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:39:08.3530|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.9587ms 204  
+2020-09-18 16:39:08.4105|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/verification application/json; charset=UTF-8 107 
+2020-09-18 16:39:08.4965|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:39:08.5129|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Verification", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Verification(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:39:08.5129|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:39:08.5368|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:39:08.5434|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 16:39:08.5434|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 16:39:08.5589|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 16:39:13.3825|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkResult in 4858.5734ms. 
+2020-09-18 16:39:13.3858|1|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2020-09-18 16:39:13.3858|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) in 4871.0872ms 
+2020-09-18 16:39:13.3858|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4981.7883ms 200  
+2020-09-18 16:39:34.6962|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:62228/api/auth/verification?ActivationCode=ce00e6ad-4c26-4751-8526-0f557e09ea5c  0 
+2020-09-18 16:39:34.7156|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.5871ms 307  
+2020-09-18 16:39:34.8114|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/api/auth/verification?ActivationCode=ce00e6ad-4c26-4751-8526-0f557e09ea5c   
+2020-09-18 16:39:34.8383|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Verification", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Verification(System.String) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:39:34.9580|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:39:50.8538|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:39:50.8538|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 16:39:50.8757|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 16:39:50.9285|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@activationCode='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithMatchingCode @activationCode 
+2020-09-18 16:40:13.2059|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 38245.698ms. 
+2020-09-18 16:40:13.2302|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|Executing RedirectResult, redirecting to http://localhost:4200/login. 
+2020-09-18 16:40:13.2302|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Verification (LeaseManagement.Authentication) in 38386.937ms 
+2020-09-18 16:40:14.9572|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40146.2771ms 302  
+2020-09-18 16:40:32.3341|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 57 
+2020-09-18 16:40:32.3475|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.3903ms 307  
+2020-09-18 16:40:32.3517|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2ROCPEK8AQ", Request id "0HM2ROCPEK8AQ:00000006": the application completed without reading the entire request body. 
+2020-09-18 16:40:32.3918|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-18 16:40:32.3918|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:40:32.4041|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.3015ms 204  
+2020-09-18 16:40:32.4540|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 57 
+2020-09-18 16:40:32.4624|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 16:40:32.4624|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 16:40:32.4796|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 16:40:32.4929|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 16:40:32.4929|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@email='?' (Size = 23), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 16:40:32.7862|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 303.168ms. 
+2020-09-18 16:40:32.8064|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-18 16:40:32.8396|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 360.9972ms 
+2020-09-18 16:40:32.8566|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 402.6363ms 200 application/json; charset=utf-8 
+2020-09-18 18:09:17.0598||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-18 18:09:17.9112|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 18:09:17.9475|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.5395ms 307  
+2020-09-18 18:09:17.9701|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RPVDU47IS", Request id "0HM2RPVDU47IS:00000001": the application completed without reading the entire request body. 
+2020-09-18 18:09:18.0537|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-18 18:09:18.0537|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 18:09:18.0638|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.0746ms 204  
+2020-09-18 18:09:18.0638|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 18:09:18.0638|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 18:09:18.3291|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 18:09:18.5428|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 18:09:19.1279|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 18:09:19.1782|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-18 18:09:19.2320|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-18 18:09:19.3947|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 18:09:19.6399|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1089.8952ms. 
+2020-09-18 18:09:19.6692|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-18 18:09:19.7056|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 1370.4847ms 
+2020-09-18 18:09:19.7227|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1650.8444ms 200 application/json; charset=utf-8 
+2020-09-18 18:40:27.9660|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 18:40:27.9660|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.4674ms 307  
+2020-09-18 18:40:27.9771|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2RPVDU47IT", Request id "0HM2RPVDU47IT:00000001": the application completed without reading the entire request body. 
+2020-09-18 18:40:28.0063|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-18 18:40:28.0100|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 18:40:28.0100|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.5319ms 204  
+2020-09-18 18:40:28.0231|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-18 18:40:28.0231|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-18 18:40:28.1964|2|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2020-09-18 18:40:28.1964|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-18 18:40:28.1964|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-18 18:40:28.2147|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-18 18:40:28.2335|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-18 18:40:28.2335|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.5378ms. 
+2020-09-18 18:40:28.2430|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-18 18:40:28.2430|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 41.2443ms 
+2020-09-18 18:40:28.2430|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 229.6116ms 200 application/json; charset=utf-8 

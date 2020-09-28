@@ -1,0 +1,97 @@
+2020-09-16 13:14:46.5431||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-16 13:14:48.2698|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:62228/  0 
+2020-09-16 13:14:48.3647|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.0368ms 200  
+2020-09-16 17:38:28.5761||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\bhavyaa.shah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2020-09-16 17:38:31.6139|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/index.html   
+2020-09-16 17:38:31.6139|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:62228/  0 
+2020-09-16 17:38:31.6963|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.9472ms 200  
+2020-09-16 17:38:32.6220|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1009.8349ms 200 text/html;charset=utf-8 
+2020-09-16 17:38:33.2751|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44389/swagger/v1/swagger.json   
+2020-09-16 17:38:33.6245|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 346.9084ms 200 application/json;charset=utf-8 
+2020-09-16 17:38:34.3196|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:38:34.3425|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.9482ms 307  
+2020-09-16 17:38:34.3740|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2Q74T7Q4IK", Request id "0HM2Q74T7Q4IK:00000002": the application completed without reading the entire request body. 
+2020-09-16 17:38:34.5271|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-16 17:38:34.5340|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:38:34.5340|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.1678ms 204  
+2020-09-16 17:38:34.5340|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:38:34.5474|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:38:34.6463|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-16 17:38:35.4924|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-16 17:38:37.0417|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-16 17:38:37.2831|10103|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from UserVM <generated>_2 in DbSet<UserVM> select [<generated>_2]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results. 
+2020-09-16 17:38:37.4090|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally. 
+2020-09-16 17:38:38.3545|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (233ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-16 17:38:38.8062|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3307.4662ms. 
+2020-09-16 17:38:38.8482|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-16 17:38:38.9702|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 4315.7546ms 
+2020-09-16 17:38:38.9825|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4438.4825ms 200 application/json; charset=utf-8 
+2020-09-16 17:43:06.3140|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:43:06.3614|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.1407ms 307  
+2020-09-16 17:43:06.3614|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2Q74T7Q4IM", Request id "0HM2Q74T7Q4IM:00000001": the application completed without reading the entire request body. 
+2020-09-16 17:43:06.4231|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-16 17:43:06.4231|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:43:06.4231|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.0218ms 204  
+2020-09-16 17:43:06.4474|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:43:06.4474|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:43:06.4601|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-16 17:43:06.4601|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-16 17:43:06.4845|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-16 17:43:06.5047|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-16 17:43:06.5047|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.6336ms. 
+2020-09-16 17:43:06.5047|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-16 17:43:06.5207|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 57.9484ms 
+2020-09-16 17:43:06.5207|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.7773ms 200 application/json; charset=utf-8 
+2020-09-16 17:43:15.0647|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:43:15.0647|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3333ms 307  
+2020-09-16 17:43:15.0647|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2Q74T7Q4IM", Request id "0HM2Q74T7Q4IM:00000004": the application completed without reading the entire request body. 
+2020-09-16 17:43:15.0947|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-16 17:43:15.0947|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:43:15.0947|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.9109ms 204  
+2020-09-16 17:43:15.1272|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 17:43:15.1272|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 17:43:15.1272|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-16 17:43:15.1424|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-16 17:43:15.1424|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-16 17:43:15.1782|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-16 17:43:15.1782|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.8332ms. 
+2020-09-16 17:43:15.1782|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-16 17:43:15.1910|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 49.4506ms 
+2020-09-16 17:43:15.1910|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.934ms 200 application/json; charset=utf-8 
+2020-09-16 18:03:12.7583|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 18:03:12.7766|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.357ms 307  
+2020-09-16 18:03:12.7766|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2Q74T7Q4IN", Request id "0HM2Q74T7Q4IN:00000001": the application completed without reading the entire request body. 
+2020-09-16 18:03:12.8550|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-16 18:03:12.8550|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 18:03:12.8678|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.8625ms 204  
+2020-09-16 18:03:12.8948|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 18:03:12.8990|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 18:03:12.8990|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-16 18:03:12.8990|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-16 18:03:12.9189|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-16 18:03:12.9497|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-16 18:03:12.9616|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 48.2326ms. 
+2020-09-16 18:03:12.9616|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'LeaseManagement.BusinessEntities.ViewModels.ErrorMessageVM'. 
+2020-09-16 18:03:12.9616|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 59.4337ms 
+2020-09-16 18:03:12.9616|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.9107ms 400 application/json; charset=utf-8 
+2020-09-16 18:03:18.8246|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:62228/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 18:03:18.8246|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6919ms 307  
+2020-09-16 18:03:18.8414|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM2Q74T7Q4IN", Request id "0HM2Q74T7Q4IN:00000004": the application completed without reading the entire request body. 
+2020-09-16 18:03:18.8663|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:44389/api/auth/login   
+2020-09-16 18:03:18.8718|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 18:03:18.8718|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.5298ms 204  
+2020-09-16 18:03:18.8922|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:44389/api/auth/login application/json; charset=UTF-8 59 
+2020-09-16 18:03:18.8922|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful. 
+2020-09-16 18:03:18.8988|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LeaseManagement.BusinessEntities.ViewModels.UserVM) on controller LeaseManagement.Authentication.Controllers.AuthController (LeaseManagement.Authentication). 
+2020-09-16 18:03:18.8988|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) - Validation state: Valid 
+2020-09-16 18:03:18.9144|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'LeaseManagementDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2020-09-16 18:03:18.9144|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@email='?' (Size = 25), @password='?' (Size = 44)], CommandType='Text', CommandTimeout='30']
+sp_GetUserWithValidCredential @email, @password 
+2020-09-16 18:03:18.9144|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.7785ms. 
+2020-09-16 18:03:18.9322|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2020-09-16 18:03:18.9322|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LeaseManagement.Authentication.Controllers.AuthController.Login (LeaseManagement.Authentication) in 34.3665ms 
+2020-09-16 18:03:18.9322|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.3918ms 200 application/json; charset=utf-8 

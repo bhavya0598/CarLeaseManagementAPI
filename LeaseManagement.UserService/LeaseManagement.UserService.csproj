@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeaseManagement.BL\LeaseManagement.Business.csproj" />
+    <ProjectReference Include="..\LeaseManagement.DataEntities\LeaseManagement.DataEntities.csproj" />
+    <ProjectReference Include="..\LeaseManagement.Infrastructure\LeaseManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\LeaseManagement.Repository\LeaseManagement.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

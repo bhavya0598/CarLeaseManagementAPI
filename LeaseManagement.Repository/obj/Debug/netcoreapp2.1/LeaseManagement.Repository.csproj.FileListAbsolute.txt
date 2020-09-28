@@ -1,0 +1,14 @@
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.Repository.deps.json
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.Repository.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.Repository.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.BusinessEntities.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.DataEntities.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.DataEntities.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\bin\Debug\netcoreapp2.1\LeaseManagement.BusinessEntities.pdb
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.csprojAssemblyReference.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.csproj.CoreCompileInputs.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.AssemblyInfoInputs.cache
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.AssemblyInfo.cs
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.csproj.CopyComplete
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.dll
+C:\Users\bhavyaa.shah\source\repos\LeaseManagement\LeaseManagement.Repository\obj\Debug\netcoreapp2.1\LeaseManagement.Repository.pdb
